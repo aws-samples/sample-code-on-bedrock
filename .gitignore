@@ -1,0 +1,41 @@
+# Compiled TypeScript output
+*.js
+*.d.ts
+!jest.config.js
+
+# Dependencies
+**/node_modules
+
+# CDK
+.cdk.staging
+cdk.out
+
+# Go CLI binaries
+cli/codeonbedrock
+cli/codeonbedrock-*
+cli/tokenwarden
+cli/tokenwarden-*
+cli/*.zip
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Agent / tooling config (local only)
+.kiro/
+AGENTS.md
+
+# Next.js
+web/.next/
+web/out/
+web/tsconfig.tsbuildinfo

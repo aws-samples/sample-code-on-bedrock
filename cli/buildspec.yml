@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      golang: 1.26
+  build:
+    commands:
+      - cd cli
+      - go test ./...
+      - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o codeonbedrock .
+      - CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -o codeonbedrock-darwin-arm64 .
+
+artifacts:
+  base-directory: cli
+  files:
+    - codeonbedrock
+    - codeonbedrock-darwin-arm64
