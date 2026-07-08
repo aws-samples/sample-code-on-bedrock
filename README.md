@@ -6,9 +6,6 @@ Serverless control plane that vends short-lived AWS credentials to developers us
 Bedrock-backed coding assistants (goose, opencode, any SigV4 Bedrock client),
 meters their usage, and enforces daily warnings + monthly kill-switches.
 
-See [DESIGN.md](./DESIGN.md) for architecture and [TODO.md](./TODO.md) for
-implementation status.
-
 ---
 
 ## Quickstart
